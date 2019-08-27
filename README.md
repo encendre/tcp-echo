@@ -1,6 +1,6 @@
-# http-grabber
+# tcp-mirror
 
-Log everything you get
+receives what you send
 
 ## usage
 
