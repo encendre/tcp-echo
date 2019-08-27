@@ -1,1 +1,1 @@
-module.exports = requrie('./lib')
+module.exports = require('./lib')
