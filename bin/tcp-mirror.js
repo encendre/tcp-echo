@@ -10,11 +10,11 @@ usage: tcp-echo [options]
 
 options:
   -h, --help \t\t Show help
-  -p, --port \t\t Port to use [7]
+  -p, --port \t\t Port to use [8080]
 `)
   process.exit(0)
 }
 
-const port = argv.port || argv.p || 7
+const port = argv.port || argv.p || 8080
 
 echo.listen(port)
