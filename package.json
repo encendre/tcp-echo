@@ -1,6 +1,6 @@
 {
   "name": "tcp-echo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple module npm to run a tcp server that sends back what is sent to it",
   "main": "index.js",
   "scripts": {
