@@ -1,6 +1,6 @@
 {
-  "name": "tcp-mirror",
-  "version": "1.0.2",
+  "name": "tcp-echo",
+  "version": "1.0.0",
   "description": "A simple module npm to run a tcp server that sends back what is sent to it",
   "main": "index.js",
   "scripts": {
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/encendre/tcp-mirror.git"
+    "url": "https://github.com/encendre/tcp-echo.git"
   },
   "bugs": {
-    "url": "https://github.com/encendre/tcp-mirror/issues"
+    "url": "https://github.com/encendre/tcp-echo/issues"
   },
-  "homepage": "https://github.com/encendre/tcp-mirror",
+  "homepage": "https://github.com/encendre/tcp-echo",
   "bin": {
-    "tcp-mirror": "./bin/tcp-mirror.js"
+    "tcp-echo": "./bin/tcp-echo.js"
   },
   "keywords": [
     "cli",
     "tcp",
-    "mirror",
+    "echo",
     "server"
   ],
   "author": "ence",

@@ -1,4 +1,4 @@
-# tcp-mirror
+# tcp-echo
 
 receives what you send
 
@@ -6,25 +6,27 @@ receives what you send
 
 ### cli
 ```bash
-npx tcp-mirror
-npx tcp-mirror -h
+npx tcp-echo
+npx tcp-echo -h
 ```
 
 ### node
 ```bash
-npm i tcp-mirror
+npm i tcp-echo
 ```
 
 ```js
-const createMirror = require('tcp-mirror')
+const createEchoServer = require('tcp-echo')
 
 // options are passed to constructor net.Server(options)
-// mirror is the tcp server returned
-const mirror = createMirror(options)
+// echo is the tcp server returned
+const echoServer = createEchoServer(options)
 
 const port = 1234
-mirror.listen(port)
-mirror.on('connection', socket => {
-  console.log(`Connection from ${socket.address().address}`)
+
+echoServer.on('connection', socket => {
+  console.log(`New connection from ${socket.address().address}`)
 })
+
+echoServer.listen(port)
 ```
